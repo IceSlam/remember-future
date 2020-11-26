@@ -9,6 +9,15 @@ $colorActive: #E31E25;
   font-family: $fontFamily;
 }
 
+.is-btn,
+.is-btn:hover {
+  box-shadow: none;
+  text-transform: none;
+  font-weight: 600;
+  border-radius: 4px !important;
+  letter-spacing: .5px;
+}
+
 
 // header
 
@@ -25,6 +34,7 @@ $colorActive: #E31E25;
       right: 20px;
       left: 20px;
       top: 20px;
+      min-height: 70px;
 
         .is-menu {
           margin-left: 4.1875rem;
@@ -43,10 +53,34 @@ $colorActive: #E31E25;
             .nav-link {
               font-weight: 500;
               text-transform: uppercase;
+              color: $color;
+              transition: color .5s;
+            }
+
+            .nav-link:hover {
+              color: $colorActive;
+              transition: color .5s;
             }
 
             .nav-link.active {
               color: $colorActive;
+            }
+
+            .nav-link.active:before,
+            .nav-link.active:after {
+              content: '';
+              width: 24px;
+              height: 8px;
+              display: block;
+              margin: 0 auto;
+            }
+
+            .nav-link.active:before {
+              background: url(../img/active_link.svg);
+            }
+
+            .nav-link.active:after {
+              background: url(../img/active_link_bottom.svg);
             }
 
           }
@@ -64,6 +98,16 @@ $colorActive: #E31E25;
           }
 
         }
+
+        .wish {
+          border: 2px solid $colorActive;
+          box-sizing: border-box;
+          font-size: 15px;
+          color: $colorActive;
+          margin-left: 2.5rem;
+
+        }
+
 
     }
 

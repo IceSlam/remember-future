@@ -3,6 +3,15 @@
 		font-family: "Roboto", sans-serif;
 }
 
+.is-btn,
+.is-btn:hover {
+		box-shadow: none;
+		text-transform: none;
+		font-weight: 600;
+		border-radius: 4px !important;
+		letter-spacing: 0.5px;
+}
+
 .is-header {
 		background: url(../img/header_bg.jpg);
 		background-position: center;
@@ -16,6 +25,7 @@
 		right: 20px;
 		left: 20px;
 		top: 20px;
+		min-height: 70px;
 }
 .is-header .is-navbar .is-menu {
 		margin-left: 4.1875rem;
@@ -32,9 +42,29 @@
 .is-header .is-navbar .is-menu .nav-item .nav-link {
 		font-weight: 500;
 		text-transform: uppercase;
+		color: #111;
+		transition: color 0.5s;
+}
+.is-header .is-navbar .is-menu .nav-item .nav-link:hover {
+		color: #E31E25;
+		transition: color 0.5s;
 }
 .is-header .is-navbar .is-menu .nav-item .nav-link.active {
 		color: #E31E25;
+}
+.is-header .is-navbar .is-menu .nav-item .nav-link.active:before,
+.is-header .is-navbar .is-menu .nav-item .nav-link.active:after {
+		content: "";
+		width: 24px;
+		height: 8px;
+		display: block;
+		margin: 0 auto;
+}
+.is-header .is-navbar .is-menu .nav-item .nav-link.active:before {
+		background: url(../img/active_link.svg);
+}
+.is-header .is-navbar .is-menu .nav-item .nav-link.active:after {
+		background: url(../img/active_link_bottom.svg);
 }
 .is-header .is-navbar .is-menu .nav-item:not(:first-child):before {
 		content: "";
@@ -45,5 +75,12 @@
 		height: 6px;
 		border-radius: 50%;
 		margin-left: 1rem;
+}
+.is-header .is-navbar .wish {
+		border: 2px solid #E31E25;
+		box-sizing: border-box;
+		font-size: 15px;
+		color: #E31E25;
+		margin-left: 2.5rem;
 }
 /*# sourceMappingURL=main.css.map */
