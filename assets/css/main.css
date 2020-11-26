@@ -10,20 +10,25 @@
 		font-weight: 600;
 		border-radius: 4px !important;
 		letter-spacing: 0.5px;
+		padding-left: 2.5rem;
+		padding-right: 2.5rem;
+}
+
+.is-btn:hover {
+		background: #E31E25;
+		color: #fff !important;
 }
 
 .is-header {
 		background: url(../img/header_bg.jpg);
-		background-position: center;
+		background-position: center top;
 		background-repeat: no-repeat;
-		min-height: 800px;
+		position: relative;
 }
 .is-header .is-navbar {
 		background: rgba(255, 255, 255, 0.8);
 		box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.07);
 		border-radius: 4px;
-		right: 20px;
-		left: 20px;
 		top: 20px;
 		min-height: 70px;
 }
@@ -82,5 +87,23 @@
 		font-size: 15px;
 		color: #E31E25;
 		margin-left: 2.5rem;
+}
+.is-header .header-wish {
+		border: 2px solid #E31E25;
+		box-sizing: border-box;
+		font-size: 1.125rem;
+		color: #E31E25;
+		display: block;
+		margin: 33.5rem auto 4.6875rem;
+}
+.is-header .header-next {
+		display: block;
+		margin: 0 auto;
+		background: #fff;
+		display: -ms-flex;
+		display: flex;
+		justify-content: center;
+		padding: 1.75rem 2.6875rem 3.125rem;
+		border-radius: 50% !important;
 }
 /*# sourceMappingURL=main.css.map */
