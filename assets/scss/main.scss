@@ -180,6 +180,7 @@ $colorActive: #E31E25;
 
   .target {
     background: url(../img/section_target_bg.png) no-repeat left center, #F8F8F8;
+    background-size: 37.5%;
 
     .icon {
       padding-top: 5.6875rem;
@@ -201,6 +202,39 @@ $colorActive: #E31E25;
     p {
       margin-bottom: 0;
       font-size: 1.0625rem;
+    }
+  }
+
+
+  .mechanics {
+    background: url(../img/section_mechanics_bg.png) no-repeat right center, #E9EEEF;
+    background-size: 37.5%;
+
+    .icon {
+      padding-top: 5.6875rem;
+      padding-bottom: 5.6875rem;
+    }
+
+    h2 {
+      font-weight: 800;
+      font-size: 2.375rem;
+      max-width: 180px;
+      margin-bottom: 0;
+      margin-left: 5rem;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      align-items: center;
+      text-align: right;
+    }
+
+    p {
+      margin-bottom: 0;
+      font-size: 1.0625rem;
+    }
+
+    img {
+      margin-left: 5rem;
     }
   }
 

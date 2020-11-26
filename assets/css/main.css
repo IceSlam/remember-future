@@ -132,6 +132,7 @@
 }
 .is-main .target {
 		background: url(../img/section_target_bg.png) no-repeat left center, #F8F8F8;
+		background-size: 37.5%;
 }
 .is-main .target .icon {
 		padding-top: 5.6875rem;
@@ -150,5 +151,31 @@
 .is-main .target p {
 		margin-bottom: 0;
 		font-size: 1.0625rem;
+}
+.is-main .mechanics {
+		background: url(../img/section_mechanics_bg.png) no-repeat right center, #E9EEEF;
+		background-size: 37.5%;
+}
+.is-main .mechanics .icon {
+		padding-top: 5.6875rem;
+		padding-bottom: 5.6875rem;
+}
+.is-main .mechanics h2 {
+		font-weight: 800;
+		font-size: 2.375rem;
+		max-width: 180px;
+		margin-bottom: 0;
+		margin-left: 5rem;
+		display: -ms-flex;
+		display: flex;
+		align-items: center;
+		text-align: right;
+}
+.is-main .mechanics p {
+		margin-bottom: 0;
+		font-size: 1.0625rem;
+}
+.is-main .mechanics img {
+		margin-left: 5rem;
 }
 /*# sourceMappingURL=main.css.map */
