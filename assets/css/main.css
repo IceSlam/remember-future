@@ -82,13 +82,15 @@
 }
 .is-header .is-navbar .search {
 		background-color: transparent !important;
+		padding-left: 1rem;
+		padding-right: 1rem;
 }
 .is-header .is-navbar .wish {
 		border: 2px solid #E31E25;
 		box-sizing: border-box;
 		font-size: 15px;
 		color: #E31E25;
-		margin-left: 2.5rem;
+		margin-left: 0.5rem;
 }
 .is-header .header-wish {
 		border: 2px solid #E31E25;
@@ -177,5 +179,27 @@
 }
 .is-main .mechanics img {
 		margin-left: 5rem;
+}
+.is-main .wishesmap {
+		padding: 6.25rem 15px;
+}
+.is-main .wishesmap h2 {
+		font-weight: 800;
+		font-size: 3.125rem;
+		text-align: center;
+		margin-bottom: 3.125rem;
+}
+.is-main .wishesmap .is-btn {
+		border: 2px solid #E31E25;
+		box-sizing: border-box;
+		font-size: 1.125rem;
+		color: #E31E25;
+		display: block;
+		max-width: 340px;
+		padding: 10px;
+		margin: 3.125rem auto 0;
+}
+.is-main .wishesmap .is-btn img {
+		margin-right: 0.5rem;
 }
 /*# sourceMappingURL=main.css.map */
