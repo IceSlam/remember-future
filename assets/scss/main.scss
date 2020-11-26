@@ -1,6 +1,6 @@
 // System variables
 
-$fontFamily: 'Roboto', sans-serif;
+$fontFamily: Montserrat, sans-serif;
 $color: #111;
 $colorActive: #E31E25;
 
@@ -15,7 +15,6 @@ $colorActive: #E31E25;
   text-transform: none;
   font-weight: 600;
   border-radius: 4px !important;
-  letter-spacing: .5px;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
 }
@@ -104,6 +103,11 @@ $colorActive: #E31E25;
 
         }
 
+        .search {
+          background-color: transparent !important;
+
+        }
+
         .wish {
           border: 2px solid $colorActive;
           box-sizing: border-box;
@@ -122,6 +126,11 @@ $colorActive: #E31E25;
       color: $colorActive;
       display: block;
       margin: 33.5rem auto 4.6875rem;
+
+      img {
+        margin-right: .5rem;
+      }
+
     }
 
     .header-next {
@@ -135,5 +144,38 @@ $colorActive: #E31E25;
       padding: 1.75rem 2.6875rem 3.125rem;
       border-radius: 50% !important;
     }
+
+}
+
+// Index page
+
+.is-main {
+
+  .is-section {
+  }
+
+  .contribution {
+
+    padding-bottom: 6.25rem;
+
+    h2 {
+      font-weight: 800;
+      color: $color;
+      text-align: center !important;
+      font-size: 3.125rem;
+    }
+
+    p {
+      text-align: center;
+      font-size: 1.0625rem;
+    }
+
+    .bold {
+      font-weight: 500;
+      font-size: 1.25rem;
+      margin-top: 1.5rem;
+    }
+
+  }
 
 }
