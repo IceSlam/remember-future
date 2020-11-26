@@ -130,4 +130,25 @@
 		font-size: 1.25rem;
 		margin-top: 1.5rem;
 }
+.is-main .target {
+		background: url(../img/section_target_bg.png) no-repeat left center, #F8F8F8;
+}
+.is-main .target .icon {
+		padding-top: 5.6875rem;
+		padding-bottom: 5.6875rem;
+}
+.is-main .target h2 {
+		font-weight: 800;
+		font-size: 2.375rem;
+		max-width: 180px;
+		margin-left: 2.825rem;
+		margin-bottom: 0;
+		display: -ms-flex;
+		display: flex;
+		align-items: center;
+}
+.is-main .target p {
+		margin-bottom: 0;
+		font-size: 1.0625rem;
+}
 /*# sourceMappingURL=main.css.map */

@@ -178,4 +178,30 @@ $colorActive: #E31E25;
 
   }
 
+  .target {
+    background: url(../img/section_target_bg.png) no-repeat left center, #F8F8F8;
+
+    .icon {
+      padding-top: 5.6875rem;
+      padding-bottom: 5.6875rem;
+    }
+
+    h2 {
+      font-weight: 800;
+      font-size: 2.375rem;
+      max-width: 180px;
+      margin-left: 2.825rem;
+      margin-bottom: 0;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      align-items: center;
+    }
+
+    p {
+      margin-bottom: 0;
+      font-size: 1.0625rem;
+    }
+  }
+
 }
