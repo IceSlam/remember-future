@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
   <head>
   <meta charset="utf-8">
@@ -7,7 +7,8 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Вспоминая будущее</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet"> <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&family=Roboto&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
   <link rel="stylesheet" href="./assets/css/mdb.min.css">
   <link rel="stylesheet" href="./assets/css/alians.css">
   <link rel="stylesheet" href="./assets/css/main.min.css" rel="stylesheet">
@@ -17,6 +18,98 @@
   </head>
 
   <body id="body">
+
+    <header class="is-header">
+      <div class="container-fluid">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light is-navbar">
+          <!-- Container wrapper -->
+          <div class="container-fluid">
+            <!-- Navbar brand -->
+            <a class="navbar-brand" href="#">
+              <img
+                src="./assets/img/navbar_logo.png"
+                height="30"
+                alt="Вспоминая будущее"
+                loading="lazy"
+              />
+            </a>
+
+            <!-- Toggle button -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <!-- Left links -->
+              <menu class="navbar-nav is-menu mr-auto mb-2 mb-lg-0 mt-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">
+                    Главная
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <!-- Navbar dropdown -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Dropdown
+                  </a>
+                  <!-- Dropdown menu -->
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"
+                    >Disabled</a
+                  >
+                </li>
+              </menu>
+              <!-- Left links -->
+
+              <!-- Search form -->
+              <form class="d-flex input-group w-auto">
+                <input
+                  type="search"
+                  class="form-control"
+                  placeholder="Type query"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-primary" type="button" data-ripple-color="dark">
+                  Search
+                </button>
+              </form>
+            </div>
+            <!-- Collapsible wrapper -->
+          </div>
+          <!-- Container wrapper -->
+        </nav>
+        <!-- Navbar -->
+      </div>
+    </header>
 
 
     <!-- SCRIPTS -->
