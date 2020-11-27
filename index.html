@@ -81,17 +81,25 @@
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M2 8C2 4.691 4.691 2 8 2C11.309 2 14 4.691 14 8C14 11.309 11.309 14 8 14C4.691 14 2 11.309 2 8ZM17.707 16.293L14.312 12.897C15.365 11.543 16 9.846 16 8C16 3.589 12.411 0 8 0C3.589 0 0 3.589 0 8C0 12.411 3.589 16 8 16C9.846 16 11.543 15.365 12.897 14.312L16.293 17.707C16.488 17.902 16.744 18 17 18C17.256 18 17.512 17.902 17.707 17.707C18.098 17.316 18.098 16.684 17.707 16.293Z" fill="#70C8D3"/>
                   </svg>
                 </button>
-                <button class="btn is-btn wish">
+                <a
+                  class="btn is-btn wish"
+                  data-toggle="modal"
+                  data-target="#makeWish"
+                >
                   Осуществить желание
-                </button>
+                </a>
               </form>
             </div>
           </div>
         </nav>
-        <button class="btn is-btn header-wish">
+        <a
+          class="btn is-btn header-wish"
+          data-toggle="modal"
+          data-target="#makeWish"
+        >
           <img src="./assets/img/header_wish_icon.svg" alt="Осуществить желание">
           Осуществить желание
-        </button>
+        </a>
         <button class="btn is-btn header-next">
           <img src="./assets/img/header_next_icon.svg" alt="Листать вниз">
         </button>
@@ -412,7 +420,11 @@
 
           </div>
           <div class="col-md-12">
-            <a href="#" class="btn is-btn">
+            <a
+              class="btn is-btn"
+              data-toggle="modal"
+              data-target="#makeWish"
+            >
               <img src="./assets/img/header_wish_icon.svg" alt="Осуществить желание">
               Осуществить желание
             </a>
@@ -446,9 +458,11 @@
               <textarea class="form-control" id="application-text" rows="4" placeholder="Описание заявки *" required></textarea>
             </div>
             <div class="col-lg-3 mb-4">
-              <button class="btn is-btn is-btn-blue btn-block" type="button" name="button">
+              <a
+                class="btn is-btn is-btn-blue btn-block"
+              >
                 Отправить заявку
-              </button>
+              </a>
             </div>
             <div class="col-lg-9 link">
               <p>
@@ -533,7 +547,11 @@
           </div>
           <div class="col-lg-3">
             <div class="btn-custom pl-4 pr-4">
-              <a href="#" class="btn btn-block is-btn help">
+              <a
+                class="btn btn-block is-btn help"
+                data-toggle="modal"
+                data-target="#makeWish"
+              >
                 Оказать помощь
               </a>
               <div class="bg"></div>
@@ -583,6 +601,53 @@
         </div>
       </div>
     </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="makeWish"
+      tabindex="-1"
+      aria-labelledby="makeWishLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="makeWishLabel"></h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h3>
+              Перезвоните мне
+            </h3>
+              <form action="#">
+                <input type="text" id="makeWish-name" class="form-control mt-4" placeholder="Имя" required/>
+                <input type="tel" id="makeWish-phone" class="form-control mt-4" placeholder="Телефон" />
+                <input type="email" id="makeWish-email" class="form-control mt-4" placeholder="E-mail" required/>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Подтверждаю согласие на обработку персональных данных
+                  </label>
+                </div>
+                <input type="submit" id="makeWish-submit" class="btn is-btn is-btn-blue btn-block mt-4" value="Отправить заявку">
+              </form>
+          </div>
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
+    </div>
 
 
     <!-- SCRIPTS -->
