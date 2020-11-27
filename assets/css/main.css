@@ -3,6 +3,20 @@
 		font-family: Montserrat, sans-serif;
 }
 
+input,
+textarea {
+		background: #fff !important;
+		padding: 1.25rem !important;
+		font-size: 0.9375rem;
+		border: none !important;
+		color: #111 !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+		color: #111 !important;
+}
+
 .is-btn,
 .is-btn:hover {
 		box-shadow: none;
@@ -16,6 +30,17 @@
 .is-btn:hover {
 		background: #E31E25;
 		color: #fff !important;
+}
+
+.is-btn-blue {
+		background: #4188C9;
+		color: #fff;
+		padding: 1.25rem 0;
+		font-size: 1rem;
+}
+
+.is-btn-blue:hover {
+		background: #1560A6;
 }
 
 .is-header {
@@ -201,5 +226,32 @@
 }
 .is-main .wishesmap .is-btn img {
 		margin-right: 0.5rem;
+}
+.is-main .feedback {
+		padding: 6.25rem 1rem;
+		background: url(../img/feedback_bg.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+}
+.is-main .feedback h2 {
+		font-weight: 800;
+		font-size: 3.125rem;
+}
+.is-main .feedback .link {
+		display: -ms-flex;
+		display: flex;
+		align-items: center;
+}
+.is-main .feedback .link p, .is-main .feedback .link a {
+		color: #fff !important;
+}
+.is-main .feedback .link a {
+		text-decoration: underline;
+		transition: all 0.5s;
+}
+.is-main .feedback .link a:hover {
+		text-decoration: none;
+		transition: all 0.5s;
 }
 /*# sourceMappingURL=main.css.map */

@@ -3,10 +3,26 @@
 $fontFamily: Montserrat, sans-serif;
 $color: #111;
 $colorActive: #E31E25;
+$colorBlue: #4188C9;
+$colorDarkBlue: #1560A6;
 
 * {
   color: $color;
   font-family: $fontFamily;
+}
+
+input,
+textarea {
+  background: #fff !important;
+  padding: 1.25rem !important;
+  font-size: .9375rem;
+  border: none !important;
+  color: $color !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: $color !important;
 }
 
 .is-btn,
@@ -24,6 +40,16 @@ $colorActive: #E31E25;
   color: #fff !important;
 }
 
+.is-btn-blue {
+  background: $colorBlue;
+  color: #fff;
+  padding: 1.25rem 0;
+  font-size: 1rem;
+}
+
+.is-btn-blue:hover {
+  background: $colorDarkBlue;
+}
 
 // header
 
@@ -262,6 +288,46 @@ $colorActive: #E31E25;
       img {
         margin-right: .5rem;
       }
+
+    }
+
+  }
+
+  .feedback {
+    padding: 6.25rem 1rem;
+    background: url(../img/feedback_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .wrapper {}
+
+    h2 {
+      font-weight: 800;
+      font-size: 3.125rem;
+    }
+
+    .link {
+
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      align-items: center;
+
+      p, a {
+        color: #fff !important;
+      }
+
+      a {
+        text-decoration: underline;
+        transition: all .5s;
+      }
+
+      a:hover {
+        text-decoration: none;
+        transition: all .5s;
+      }
+
     }
 
   }
