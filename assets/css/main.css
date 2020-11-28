@@ -424,7 +424,7 @@ textarea::placeholder {
 }
 .is-main .is-section.mechanics {
 		background: url(../img/section_mechanics_bg.png) no-repeat right center, #E9EEEF;
-		background-size: 37.5%;
+		background-size: 45%;
 }
 .is-main .is-section.mechanics .icon {
 		padding-top: 5.6875rem;
@@ -447,6 +447,27 @@ textarea::placeholder {
 }
 .is-main .is-section.mechanics img {
 		margin-left: 5rem;
+}
+.is-main .is-section.mechanics ul {
+		list-style-type: none;
+}
+.is-main .is-section.mechanics ul li {
+		margin-bottom: 0.5rem;
+}
+.is-main .is-section.mechanics ul li::before {
+		content: "";
+		display: inline-block;
+		transform: rotate(45deg);
+		width: 0.375rem;
+		height: 0.8125rem;
+		border: 0.125rem solid #e13c42;
+		border-top: 0;
+		border-left: 0;
+		margin-left: 0.25rem;
+		margin-top: -1px;
+		background-color: transparent;
+		margin-right: 1rem;
+		z-index: 1;
 }
 .is-main .is-section.wishesmap {
 		padding: 6.25rem 15px;

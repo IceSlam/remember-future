@@ -1,0 +1,113 @@
+// System variables
+
+$fontFamily: Montserrat, sans-serif;
+$color: #111;
+$colorActive: #E31E25;
+$colorBlue: #4188C9;
+$colorDarkBlue: #1560A6;
+$colorActiveDark: #BE0F15;
+$colorVk: #5181B8;
+$colorFb: #475993;
+$colorOk: #F7931E;
+$colorMail: #2C6085;
+$colorTwit: #2CB9E6;
+$colorInst: linear-gradient(49.12deg, #FFDD55 6.62%, #FF543E 50.06%, #C837AB 93.5%);
+$colorOverlay: rgba(6,35,55,1);
+$colorModalBg: #E0EDEF;
+
+@media screen and (max-width:575px) {
+  body {
+    overflow-x: hidden;
+  }
+  .is-header {
+    background-size: 300%;
+    overflow-x: hidden;
+    .is-navbar {
+      position: fixed;
+      margin-left: 0;
+      right: 1rem;
+      left: 1rem;
+      transition: position .5s, height .5s, width .5s;
+      .is-menu {
+        margin-left: 0;
+        .nav-item {
+          .nav-link{}
+          .nav-link.active::before,
+          .nav-link.active::after {
+            display: none;
+          }
+        }
+        .nav-item::before {
+          display: none !important;
+        }
+      }
+      form {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+      }
+    }
+    .is-navbar-mobile {
+      transition: left .5s;
+      left: -100%;
+      width: 0 !important;
+    }
+    .is-navbar-mobile.show {
+      display: block;
+      width: 100% !important;
+      position: fixed !important;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      padding: 1rem;
+      transition: left .5s;
+      z-index: 300;
+      .wrapper {
+        position: relative;
+        height: 100%;
+        .navbar-toggler {
+          position: absolute !important;
+          right: 0;
+          top: 0;
+        }
+        .navbar-brand {
+          margin-right: 0;
+          img {
+            display: block;
+            margin: 1rem auto;
+          }
+        }
+        .navbar-nav {
+          text-align: center;
+          font-weight: 600;
+        }
+        .search {
+          display: block;
+          width: 100%;
+        }
+        .search:hover {
+          background-color: transparent !important;
+        }
+        .wish {
+          display: block;
+          width: 100%;
+          border: 2px solid $colorActive;
+          box-sizing: border-box;
+          font-size: 15px;
+          color: $colorActive;
+        }
+        .nav-item {
+          margin: .5rem auto;
+        }
+      }
+    }
+    .header-wish {
+      margin-top: -5rem;
+    }
+    .header-next {
+      margin-top: 2rem;
+    }
+  }
+}
