@@ -10,7 +10,7 @@ WordPress-тема оформления сайта проекта Вспомин
 
 2. При помощи консольной команды Git копируем тему из репозитория**:
 
-  `git clone https://gitlab.com/iceslam/remember-future.git`
+  `git clone https://github.com/iceslam/remember-future.git`
 
 3. Выбрать тему из списка доступных: ПУ -> Внешний вид -> Темы -> Вспоминая будущее -> Активировать
 
