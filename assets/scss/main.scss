@@ -71,6 +71,7 @@ textarea::placeholder {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   transition: all .5s;
+  box-shadow: none !important;
 }
 
 .is-btn:hover {
@@ -587,7 +588,95 @@ textarea::placeholder {
     background: url(../img/page_header_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative
+    position: relative;
     background-position: center bottom;
+    padding-bottom: 2rem;
+    .breadcrumb {
+      background-color: transparent;
+      font-size: .875rem;
+      padding-left: 0 !important;
+      color: #fff !important;
+      .breadcrumb-item{
+        a {
+          color: #fff;
+        }
+      }
+      .breadcrumb-item.active,
+      .breadcrumb-item::before {
+        color: #467176;
+      }
+    }
+    h2 {
+      font-size: 3.125rem;
+      font-weight: 800;
+    }
+    .wishes-btn {
+      font-size: 1.125rem !important;
+      font-weight: bold !important;
+      padding: 1.25rem 2.5rem !important;
+      color: $colorActive !important;
+      border: 2px solid $colorActive !important;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      svg {
+        margin-right: 1rem;
+        path {
+          fill: none;
+          stroke: $colorActive;
+          transition: all .5s;
+        }
+      }
+    }
+    .wishes-btn.active,
+    .wishes-btn:hover {
+      color: #fff !important;
+      background: $colorActive;
+      transition: color .5s, background .5s;
+      svg {
+        path {
+          fill: #FBBB48;
+          stroke: none;
+          transition: all .5s;
+        }
+      }
+    }
+    .search-by-reg {
+      background: #fff;
+      border-radius: 4px;
+      height: 100%;
+      transition: all .5s;
+      input {
+        height: auto;
+        background-color: transparent !important;
+        font-size: .9375rem;
+        color: $color;
+      }
+      button {
+        padding: 1rem 1.25rem;
+        svg {
+          path {
+            fill: $color;
+            opacity: .2;
+            transition: opacity .5s;
+          }
+        }
+      }
+      button:hover {
+        background-color: transparent !important;
+        svg {
+          path {
+            opacity: 1;
+            transition: opacity .5s;
+          }
+        }
+      }
+    }
+    .search-by-reg:hover {
+      border: 2px solid #4188C9;
+      transition: all .5s;
+    }
   }
 }

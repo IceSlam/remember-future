@@ -52,6 +52,7 @@ textarea::placeholder {
 		padding-left: 2.5rem;
 		padding-right: 2.5rem;
 		transition: all 0.5s;
+		box-shadow: none !important;
 }
 
 .is-btn:hover {
@@ -524,9 +525,86 @@ textarea::placeholder {
 		background-repeat: no-repeat;
 		background-size: cover;
 		position: relative;
+		background-position: center bottom;
+		padding-bottom: 2rem;
 }
-
 .page .is-header .breadcrumb {
-	background-color: transparent;
+		background-color: transparent;
+		font-size: 0.875rem;
+		padding-left: 0 !important;
+		color: #fff !important;
+}
+.page .is-header .breadcrumb .breadcrumb-item a {
+		color: #fff;
+}
+.page .is-header .breadcrumb .breadcrumb-item.active,
+.page .is-header .breadcrumb .breadcrumb-item::before {
+		color: #467176;
+}
+.page .is-header h2 {
+		font-size: 3.125rem;
+		font-weight: 800;
+}
+.page .is-header .wishes-btn {
+		font-size: 1.125rem !important;
+		font-weight: bold !important;
+		padding: 1.25rem 2.5rem !important;
+		color: #E31E25 !important;
+		border: 2px solid #E31E25 !important;
+		display: -ms-flex;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+}
+.page .is-header .wishes-btn svg {
+		margin-right: 1rem;
+}
+.page .is-header .wishes-btn svg path {
+		fill: none;
+		stroke: #E31E25;
+		transition: all 0.5s;
+}
+.page .is-header .wishes-btn.active,
+.page .is-header .wishes-btn:hover {
+		color: #fff !important;
+		background: #E31E25;
+		transition: color 0.5s, background 0.5s;
+}
+.page .is-header .wishes-btn.active svg path,
+.page .is-header .wishes-btn:hover svg path {
+		fill: #FBBB48;
+		stroke: none;
+		transition: all 0.5s;
+}
+.page .is-header .search-by-reg {
+		background: #fff;
+		border-radius: 4px;
+		height: 100%;
+		transition: all 0.5s;
+}
+.page .is-header .search-by-reg input {
+		height: auto;
+		background-color: transparent !important;
+		font-size: 0.9375rem;
+		color: #111;
+}
+.page .is-header .search-by-reg button {
+		padding: 1rem 1.25rem;
+}
+.page .is-header .search-by-reg button svg path {
+		fill: #111;
+		opacity: 0.2;
+		transition: opacity 0.5s;
+}
+.page .is-header .search-by-reg button:hover {
+		background-color: transparent !important;
+}
+.page .is-header .search-by-reg button:hover svg path {
+		opacity: 1;
+		transition: opacity 0.5s;
+}
+.page .is-header .search-by-reg:hover {
+		border: 2px solid #4188C9;
+		transition: all 0.5s;
 }
 /*# sourceMappingURL=main.css.map */
