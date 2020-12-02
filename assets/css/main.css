@@ -607,4 +607,61 @@ textarea::placeholder {
 		border: 2px solid #4188C9;
 		transition: all 0.5s;
 }
+.page .is-main .section.wishes .card-wrapper {
+		padding: 1rem;
+}
+.page .is-main .section.wishes .card-wrapper .card {
+		background: #FFFFFF;
+		padding: 2.5rem 2rem;
+		border: 5px solid #F3F3F3;
+		box-sizing: border-box;
+		box-shadow: inset 0px 200px 0px #F3F3F3;
+}
+.page .is-main .section.wishes .card-wrapper .card img {
+		margin-top: calc(100% - 150%);
+		width: 100%;
+}
+.page .is-main .section.wishes .card-wrapper .card .region {
+		font-size: 0.9375rem;
+		color: #9DA2A3;
+		margin-bottom: 0.625rem;
+		line-height: 1.25;
+}
+.page .is-main .section.wishes .card-wrapper .card h3 {
+		font-size: 1.75rem;
+		font-weight: 800;
+		line-height: 0.85;
+}
+.page .is-main .section.wishes .card-wrapper .card h3 .last-name {
+		font-size: 1.25rem;
+		font-weight: 500;
+}
+.page .is-main .section.wishes .card-wrapper .card .age {
+		font-size: 1.0625rem;
+}
+.page .is-main .section.wishes .card-wrapper .card .wish {
+		font-size: 0.9375rem;
+		line-height: 1.25;
+		margin-bottom: 1.5rem;
+}
+.page .is-main .section.wishes .card-wrapper .card .btn {
+		display: block;
+		padding: 1.125rem 1.8125rem;
+		border: 2px solid #E31E25;
+		color: #E31E25;
+		font-size: 0.9375rem;
+}
+.page .is-main .section.wishes .more {
+		background: #4188C9;
+		display: block !important;
+		max-width: 243px;
+		margin: 0 auto;
+		font-weight: bold;
+		font-size: 1rem;
+		padding: 1.25rem;
+		color: #fff;
+}
+.page .is-main .section.wishes .more:hover {
+		background: #1560A6;
+}
 /*# sourceMappingURL=main.css.map */

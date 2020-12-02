@@ -679,4 +679,64 @@ textarea::placeholder {
       transition: all .5s;
     }
   }
+  .is-main {
+    .section.wishes {
+      .card-wrapper {
+        padding: 1rem;
+        .card {
+          background: #FFFFFF;
+          padding: 2.5rem 2rem;
+          border: 5px solid #F3F3F3;
+          box-sizing: border-box;
+          box-shadow: inset 0px 200px 0px #F3F3F3;
+          img {
+            margin-top: calc(100% - 150%);
+            width: 100%;          }
+          .region {
+            font-size: .9375rem;
+            color: #9DA2A3;
+            margin-bottom: .625rem;
+            line-height: 1.25;
+          }
+          h3 {
+            font-size: 1.75rem;
+            font-weight: 800;
+            line-height: .85;
+            .last-name {
+              font-size: 1.25rem;
+              font-weight: 500;
+            }
+          }
+          .age {
+            font-size: 1.0625rem;
+          }
+          .wish {
+            font-size: .9375rem;
+            line-height: 1.25;
+            margin-bottom: 1.5rem;
+          }
+          .btn {
+            display: block;
+            padding: 1.125rem 1.8125rem;
+            border: 2px solid $colorActive;
+            color: $colorActive;
+            font-size: .9375rem;
+          }
+        }
+      }
+      .more {
+        background: $colorBlue;
+        display: block !important;
+        max-width: 243px;
+        margin: 0 auto;
+        font-weight: bold;
+        font-size: 1rem;
+        padding: 1.25rem;
+        color: #fff;
+      }
+      .more:hover {
+        background: $colorDarkBlue;
+      }
+    }
+  }
 }
