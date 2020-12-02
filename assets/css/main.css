@@ -518,4 +518,15 @@ textarea::placeholder {
 		text-decoration: none;
 		transition: all 0.5s;
 }
+
+.page .is-header {
+		background: url(../img/page_header_bg.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+}
+
+.page .is-header .breadcrumb {
+	background-color: transparent;
+}
 /*# sourceMappingURL=main.css.map */

@@ -580,5 +580,14 @@ textarea::placeholder {
       }
     }
   }
+}
 
+.page {
+  .is-header {
+    background: url(../img/page_header_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative
+    background-position: center bottom;
+  }
 }
