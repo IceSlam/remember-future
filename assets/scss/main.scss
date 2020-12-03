@@ -21,6 +21,12 @@ $colorModalBg: #E0EDEF;
   font-family: $fontFamily;
 }
 
+.fancybox-toolbar *,
+.fancybox-navigation *,
+.fancybox-infobar * {
+  color: #fff;
+}
+
 input,
 textarea {
   background: #fff !important;

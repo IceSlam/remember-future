@@ -3,6 +3,12 @@
 		font-family: Montserrat, sans-serif;
 }
 
+.fancybox-toolbar *,
+.fancybox-navigation *,
+.fancybox-infobar * {
+		color: #fff;
+}
+
 input,
 textarea {
 		background: #fff !important;
