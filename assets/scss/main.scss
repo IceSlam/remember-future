@@ -740,3 +740,41 @@ textarea::placeholder {
     }
   }
 }
+
+// Wishes item
+
+.page {
+  .wishes-item-title {
+    font-size: 3.125rem;
+    font-weight: 800;
+  }
+  .item-age {
+    font-weight: 800;
+    color: #fff;
+    font-size: 1.875rem;
+  }
+  .item-region {
+    font-weight: 500;
+    color: #fff;
+    font-size: 1.625rem;
+  }
+  .is-main {
+    .wishes-item {
+      .veteran-photo {
+        margin-top: calc(100% - 170%);
+        position: relative;
+      }
+      .item-wish {
+        font-size: 1.25rem;
+      }
+      .item-wish-help {
+        display: block;
+        padding: 1.125rem 1.8125rem;
+        border: 2px solid $colorActive;
+        color: $colorActive;
+        font-size: .9375rem;
+        max-width: 249px;
+      }
+    }
+  }
+}

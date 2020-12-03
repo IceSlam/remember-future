@@ -664,4 +664,34 @@ textarea::placeholder {
 .page .is-main .section.wishes .more:hover {
 		background: #1560A6;
 }
+
+.page .wishes-item-title {
+		font-size: 3.125rem;
+		font-weight: 800;
+}
+.page .item-age {
+		font-weight: 800;
+		color: #fff;
+		font-size: 1.875rem;
+}
+.page .item-region {
+		font-weight: 500;
+		color: #fff;
+		font-size: 1.625rem;
+}
+.page .is-main .wishes-item .veteran-photo {
+		margin-top: calc(100% - 170%);
+		position: relative;
+}
+.page .is-main .wishes-item .item-wish {
+		font-size: 1.25rem;
+}
+.page .is-main .wishes-item .item-wish-help {
+		display: block;
+		padding: 1.125rem 1.8125rem;
+		border: 2px solid #E31E25;
+		color: #E31E25;
+		font-size: 0.9375rem;
+		max-width: 249px;
+}
 /*# sourceMappingURL=main.css.map */
