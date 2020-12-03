@@ -725,5 +725,6 @@ textarea::placeholder {
 		background-repeat: no-repeat;
 		background-size: cover;
 		border-radius: 0;
+		cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */
