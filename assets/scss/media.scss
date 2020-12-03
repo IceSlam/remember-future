@@ -110,4 +110,45 @@ $colorModalBg: #E0EDEF;
       margin-top: 2rem;
     }
   }
+  .is-main {
+    .is-section.contribution {
+      .logos {
+        display: block !important;
+        img {
+          margin: 1rem auto 0;
+        }
+      }
+    }
+    .is-section.target {
+      background-size: 100%;
+      background-position: left top;
+      padding: 1rem;
+      .icon {
+        padding-top: 2rem;
+        justify-content: center !important;
+        h2 {
+          text-align: center;
+          margin-left: 1rem;
+        }
+      }
+    }
+    .is-section.mechanics {
+      padding: 2rem 1rem 1rem;
+      background-size: 100%;
+      background-position: right top;
+      .icon {
+        order: 1;
+        justify-content: center !important;
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+        h2 {
+          margin-left: 1rem;
+          text-align: center;
+        }
+      }
+      .list {
+        order: 2;
+      }
+    }
+  }
 }
