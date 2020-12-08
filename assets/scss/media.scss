@@ -609,3 +609,94 @@ $colorModalBg: #E0EDEF;
     }
   }
 }
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+  .is-header {
+    .is-navbar {
+      .navbar-nav {
+        margin-left: 0 !important;
+      }
+      .search-wish {
+        justify-content: center !important;
+        .wish {
+          padding-left: 1rem !important;
+          padding-right: 1rem !important;
+          font-size: 12px;
+        }
+      }
+      .is-menu {
+      }
+    }
+  }
+  .page {
+    .is-main {
+      .section.wishes {
+        .card-wrapper {
+          .card {
+            img {
+              margin-top: calc(100% - 130%);
+            }
+          }
+        }
+        .more {
+          max-width: 100%;
+        }
+      }
+      .wishes-item {
+        .veteran-photo {
+          margin-top: calc(100% - 190%);
+        }
+      }
+    }
+  }
+  .is-main {
+    .is-section.contribution {
+      .logos {
+        display: block !important;
+        img {
+          margin: 1rem auto 0;
+        }
+      }
+    }
+    .is-section.target {
+      background-size: 50%;
+      background-position: -20% center;
+      padding: 1rem;
+      .icon {
+        padding-top: 3.8rem;
+        padding-bottom: 3.8rem;
+        h2 {
+          text-align: center;
+          margin-left: 1rem;
+        }
+      }
+    }
+    .is-section.mechanics {
+      padding: 2rem 1rem 1rem;
+      background-size: 50%;
+      background-position: 120% center;
+      .icon {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        h2 {
+          margin-left: 1rem;
+          text-align: center;
+        }
+      }
+      .list {
+      }
+    }
+    .is-section.feedback {
+      h2 {
+        text-align: center;
+      }
+    }
+  }
+  .is-footer {
+    .logo {
+      p {
+        text-align: center;
+      }
+    }
+  }
+}
