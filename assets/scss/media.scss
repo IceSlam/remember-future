@@ -206,3 +206,195 @@ $colorModalBg: #E0EDEF;
     }
   }
 }
+
+@media screen and (min-width:576px) and (max-width:767px) {
+  body {
+    overflow-x: hidden;
+  }
+  .page .is-header {
+    padding-top: 0rem;
+    .heading {
+      margin-top: -20rem !important;
+      .wishes-btn {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  .page .wishes {
+    padding: 2rem;
+    .card-wrapper {
+      .card {
+        img {
+          margin-top: 4rem !important;
+        }
+        .wish {
+          margin-top: 1rem !important;
+        }
+      }
+    }
+  }
+  .page .wishes-item {
+    padding-bottom: 1rem !important;
+    .veteran-photo {
+      margin-top: 0rem !important;
+    }
+    .item-wish {
+      margin-top: 1rem !important;
+    }
+  }
+  .veterans-life {
+    margin-top: 1rem !important;
+  }
+  .is-header {
+    background-size: 300%;
+    overflow-x: hidden;
+    .is-navbar {
+      position: fixed;
+      margin-left: 0;
+      right: 1rem;
+      left: 1rem;
+      z-index: 10;
+      transition: position .5s, height .5s, width .5s;
+      .is-menu {
+        margin-left: 0;
+        .nav-item {
+          .nav-link{}
+          .nav-link.active::before,
+          .nav-link.active::after {
+            display: none;
+          }
+        }
+        .nav-item::before {
+          display: none !important;
+        }
+      }
+      form {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+      }
+    }
+    .is-navbar-mobile {
+      transition: left .5s, display .5s;
+      left: -100%;
+      width: 0 !important;
+    }
+    .is-navbar-mobile.show {
+      display: block;
+      width: 100% !important;
+      position: fixed !important;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 1rem;
+      transition: left .5s, display .5s;
+      z-index: 300;
+      .wrapper {
+        position: relative;
+        height: 100%;
+        .navbar-toggler {
+          position: absolute !important;
+          right: 0;
+          top: 0;
+        }
+        .navbar-brand {
+          margin-right: 0;
+          img {
+            display: block;
+            margin: 1rem auto;
+          }
+        }
+        .navbar-nav {
+          text-align: center;
+          font-weight: 600;
+        }
+        .search {
+          display: block;
+          width: 100%;
+        }
+        .search:hover {
+          background-color: transparent !important;
+        }
+        .wish {
+          display: block;
+          width: 100%;
+          border: 2px solid $colorActive;
+          box-sizing: border-box;
+          font-size: 15px;
+          color: $colorActive;
+        }
+        .nav-item {
+          margin: .5rem auto;
+        }
+      }
+    }
+    .header-wish {
+      margin-top: 13rem;
+    }
+    .header-next {
+      margin-top: 2rem;
+    }
+  }
+  .is-main {
+    .is-section.contribution {
+      .logos {
+        display: block !important;
+        img {
+          margin: 1rem auto 0;
+        }
+      }
+    }
+    .is-section.target {
+      background-size: 60%;
+      background-position: left top;
+      padding: 1rem;
+      .icon {
+        padding-top: 2rem;
+        justify-content: flex-start !important;
+        h2 {
+          text-align: center;
+          margin-left: 1rem;
+        }
+      }
+    }
+    .is-section.mechanics {
+      padding: 2rem 1rem 1rem;
+      background-size: 72%;
+      background-position: right top;
+      .icon {
+        order: 1;
+        justify-content: flex-end !important;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        h2 {
+          margin-left: 1rem;
+          text-align: center;
+        }
+      }
+      .list {
+        order: 2;
+      }
+    }
+  }
+  .is-footer {
+    .menu {
+      display: none;
+    }
+    .contacts {
+      ul {
+        margin-left: 0 !important;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem !important;
+      }
+    }
+    .developer {
+      display: -webkit-flex !important;
+      display: -ms-flex !important;
+      display: flex !important;
+      justify-content: center !important;
+    }
+  }
+}
